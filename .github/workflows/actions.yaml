@@ -26,7 +26,7 @@ jobs:
 
       - name: Tests with pytest
         run: |
-          pipenv run pytest --cov=pypro
+          pipenv run pytest --cov=pypro --cov-report=xml
 
       - name: Upload coverage reports to Codecov with GitHub Action...
         uses: codecov/codecov-action@v3
