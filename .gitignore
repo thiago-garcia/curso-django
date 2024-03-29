@@ -130,3 +130,7 @@ dmypy.json
 
 # VSCODE
 .vscode
+
+# Media & static files
+staticfiles/
+mediafiles/
