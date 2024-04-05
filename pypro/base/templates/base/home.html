@@ -11,7 +11,7 @@
 
 	<meta name="description" content="Página do curso Python Pro">
 	<meta name="author" content="Thiago Garcia">
-	<link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}"/>
+	<link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}" />
 
 	<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
 	<link href="{% static 'css/style.css' %}" rel="stylesheet">
@@ -31,7 +31,7 @@
 
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
-			</ul>			
+			</ul>
 		</div>
 	</nav>
 	<div class="container">
@@ -41,10 +41,27 @@
 					<h2>
 						Curso de Python com Luciano Ramalho
 					</h2>
-					<p>
-						Confira em breve mais informações sobre o curso que será ministrado pelo autor do livro
-						<a href="http://shop.oreilly.com/product/0636920032519.do" target="_blank">Python Fluente</a>
-					</p>
+					<h4 class="mt-4">Entre na fila de espera</h4>
+					<form action="https://outlook.us18.list-manage.com/subscribe/post?u=462e0823a0a6fbb6930411ece&amp;id=3a7306642d&amp;f_id=00a1c2e1f0" method="post" 
+						id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self">
+						<div class="form-row align-items-center">
+						  	<div class="col-auto">
+								<label class="sr-only" for="mce-EMAIL">E-mail</label>
+								<input type="email" name="EMAIL" class="required email form-control mb-2" id="mce-EMAIL" required="" placeholder="email@email.com">
+						  	</div>						  
+						  	<div class="col-auto">
+								<label class="sr-only" for="mce-FNAME">Nome</label>
+								<input type="text" name="FNAME" class="required text form-control mb-2" id="mce-FNAME" required="" placeholder="Seu nome">
+						  	</div>					
+							<div aria-hidden="true" style="position: absolute; left: -5000px;">
+								/* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
+								<input type="text" name="b_462e0823a0a6fbb6930411ece_3a7306642d" tabindex="-1" value="">
+							</div>	  
+						  	<div class="col-auto">
+								<input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-primary mb-2" value="Salvar">
+						  	</div>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
@@ -56,13 +73,17 @@
 					</h5>
 					<div class="card-body">
 						<p class="card-text">
-							<img src="{% static 'img/user.png' %}" width="160" alt="Autor" class="img-thumbnail float-left mr-3" />
+							<img src="{% static 'img/user.png' %}" width="160" alt="Autor"
+								class="img-thumbnail float-left mr-3" />
 							Ramalho é sócio e professor na <a href="www.python.pro.br">Python Pro</a> e autor do Livro
-							Python Fluente. Foi diretor técnico do Brasil Online, primeiro portal da Abril S/A na Web.
-							Liderou times para os portais IDG Now, BOL, UOL, AOL Brasil e outros, usando Python desde 1998.
+							<a href="http://shop.oreilly.com/product/0636920032519.do" target="_blank">Python Fluente</a>. Foi diretor técnico do Brasil Online, primeiro portal da Abril S/A na Web.
+							Liderou times para os portais IDG Now, BOL, UOL, AOL Brasil e outros, usando Python desde
+							1998.
 							Como instrutor, atendeu clientes como Citibank, CPqD, Serpro, Presidência da República,
-							Globo.com e Itaú. Palestrante em eventos internacionais como FISL, PyCon US e OSCON. Ajudou a
-							criar a Associação Python Brasil e foi seu presidente. É membro da Python Software Foundation e
+							Globo.com e Itaú. Palestrante em eventos internacionais como FISL, PyCon US e OSCON. Ajudou
+							a
+							criar a Associação Python Brasil e foi seu presidente. É membro da Python Software
+							Foundation e
 							fundador do Garoa Hacker Clube, o primeiro hackerspace do Brasil.
 						</p>
 					</div>
@@ -70,29 +91,29 @@
 			</div>
 		</div>
 	</div>
-<footer class="main-footer mt-5 pt-4 text-light">
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				<h3>Entre em contato</h3>
-				<address>
-					+55 00 12345-6789
-					<br />
-					<a href="mailto:email@email.com" class="text-light">email@email.com</a>
-				</address>
-			</div>
-		</div>
-	</div>
-	<div class="rights pb-4">
+	<footer class="main-footer mt-5 pt-4 text-light">
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					{% now "Y" %} Python Pro. Todos os direitos reservados
+					<h3>Entre em contato</h3>
+					<address>
+						+55 00 12345-6789
+						<br />
+						<a href="mailto:email@email.com" class="text-light">email@email.com</a>
+					</address>
 				</div>
 			</div>
 		</div>
-	</div>
-</footer>
+		<div class="rights pb-4">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						{% now "Y" %} Python Pro. Todos os direitos reservados
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 </body>
 
 </html>
