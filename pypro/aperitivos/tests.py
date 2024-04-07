@@ -19,4 +19,4 @@ def test_titulo_video(resp):
 
 def test_conteudo_video(resp):
     assert_contains(resp,
-                    '<iframe src="https://player.vimeo.com/video/288344114?h=63fff44243&title=0&byline=0&portrait=0"')
+                    '<iframe src="https://player.vimeo.com/video/288344114"')
