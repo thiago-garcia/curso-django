@@ -18,8 +18,10 @@ git clone https://github.com/thiago-garcia/curso-django.git
 cd curso-django
 cp contrib/env-sample .env
 python -m pip install pipenv
-pipenv install -d
+pipenv sync -d
 ```
+
+Necessário editar a linha do arquivo ```.env``` para ```DEBUG=True```
 
 O projeto utiliza Postgres como banco de dados. Com docker compose, executar:
 
