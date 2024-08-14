@@ -6,7 +6,6 @@ name = "pypi"
 [packages]
 django = "*"
 gunicorn = "*"
-pytest-django = "*"
 python-decouple = "*"
 dj-database-url = "*"
 psycopg2-binary = "*"
@@ -22,6 +21,7 @@ django-extensions = "*"
 flake8 = "*"
 pytest-cov = "*"
 model-bakery = "*"
+pytest-django = "*"
 
 [requires]
 python_version = "3.10"
