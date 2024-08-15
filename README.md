@@ -32,7 +32,7 @@ docker compose up -d
 Aplicar migrações no banco de dados e criar usuário:
 
 ```bash
-# necesário estar no virtualenv, caso não esteja ativo, executar:
+# necessário estar no virtualenv, caso não esteja ativo, executar:
 pipenv shell 
 
 # aplicar migrações e criar usuário
@@ -42,7 +42,7 @@ python manage.py createsuperuser
 
 Rodar o servidor localmente:
 ```bash
-# necesário estar no virtualenv, caso não esteja ativo, executar:
+# necessário estar no virtualenv, caso não esteja ativo, executar:
 pipenv shell 
 
 python manage.py runserver
